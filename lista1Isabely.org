@@ -1,0 +1,16 @@
+#+title: Lista de exercícios 1 - docker
+#+author: Isabely Gonçalves Mariano
+
+* 1 - Resumidamente, o que significa a palavra contêiner?
+
+é um processo organizado onde é guardado várias dependências ou códigos e permite que seja implantado em ambientes com pouca ou sem nenhuma modificação. Ou seja, são tudo empacotado juntos como uma imagem de contêiner e depois pode ser implantado onde quiser. 
+
+
+* 2 - Cite algumas vantagens de dockerizar um programa/aplicação
+
+pois é simples de usar, não precisa de uma máquina virtual, dispensa instalação nativa do sistema operacional, tem uma rápida implantação, modularidade, imagens docker é junção de diversas camadas, oferece ambiente replicável, etc. 
+
+
+* 3 - Execute =docker run --rm chuanwen/cowsay= e descreva o resultado! Pode repetir a execução se quiser.
+
+aparece uma vaca dizendo "Do unto others before they undo you."  e se repetir a execução a frase muda, a minha mudou para "Last week´s pet, this week´s special."

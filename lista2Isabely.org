@@ -1,0 +1,65 @@
+#+title: Lista de exercícios 2 - Linux
+#+author: Isabely Gonçalves Mariano
+
+* 1 - Explique a definição de "Linux"
+
+Linux faz a comunicação entre sistema operaional e o hardware. É um sistema operacional que possibilita execução de programas. 
+
+
+
+* 2 - Dado os diretórios da primeira tabela, correlacione-os com suas funções na segunda tabela:
+
+| opção | diretório |
+|-------+-----------|
+| a     | ~/dev~      |
+| b     | ~/etc~      |
+| c     | ~/usr~      |
+| d     | ~/opt~      |
+
+| opção | função                                                                                               |
+|-------+------------------------------------------------------------------------------------------------------|
+|   d    | Localização de arquivos, programas e bibliotecas do escopo de usário ficam; não são dados essenciais |
+|   a    | Diretório destino das mapeações de cada hardware                                                     |
+|   c   | Aqui são encontrados softwares adicionais e proprietários                                            |
+|   b   | Local onde as configurações do sistema ficam disponíveis de forma global                             |
+
+
+
+
+* 3 - Escolha 3 (três) diretórios Linux a partir da raiz (~/~) e explique sua respectiva função.
+Regras:
+- Não vale repetir os diretórios da questão anterior ☺
+
+~/boot~ Pasta onde ficam as configurações para que o seu sistema operacional inicie corretamente
+~/lib~  São links simbólicos (atalhos) para /usr, ex: /lib -> /usr/lib. Guarda as bibliotecas necessárias de cada software. 
+~/run~  Outro diretório virtual. Guarda informações do sistema desde o último boot
+
+
+
+
+* 4 - Qual a finalidade de existirem grupos em sistemas operacionais baseados no Linux?
+
+O Linux é baseado em diretórios/pastas, então com isso a melhor forma de organizar as permissões do arquivo é etiquetando de acordo com as permissões que o grupo de usuários tem. 
+
+
+* 5 - Descreva cada permissão:
+- Exemplo:
+=.rw-rw-rw-= -> ~.~ significa xxx, yyy tem permissões de nnn e mmm, etc...
+
+| permissão  | descrição |
+|------------+-----------|
+| =.rw-rw-rw-= |Arquivo comum, o criador do arquivo pode ler e escrever, o grupo que ele pertence e outros usuários também |
+| =lr-x---rwx= |Um link simbólico, o criador do arquivo pode ler e executar e os outros usuários também, mas o grupo que ele pertence não pode |
+| =drwxr-xr-x= |O 'd' quer dizer que é uma pasta, o criador do arquivo pode tudo, o grupo que ele pertence e os outros usuários podem ler e executar |
+| =.rw-r--r--= |Arquivo commum, o criador do arquivo pode ler e escrever, o grupo que ele pertence e os usuários somente podem ler |
+| =drwxrwxrwx= |O 'd' quer dizer que é uma pasta, o criador do arquivo pode fazer tudo, o grupo que ele pertence e os usuários também |
+
+
+* 6 - Defina ~STDIN~, ~STDOUT~ e ~STDERR~
+
+Grupos de entrada e saída. STDIN: Entrada, como o "cd" que é o comando para entrar nos diretórios. STDOUT: saída, produzir conteúdo em texto ou algum efeito colateral no sistema. STDERR: guarda mensagens de erros geradas pelo sistema 
+
+
+* 7 - Diferencie uma ~CLI~ de uma ~GUI~, apontando suas vantagens e desvantagens
+
+CLI= interface de linha de comando. GUI= Interface gráfica. Vantagens= CLI por ser mais simples acaba exixindo menos da máquina, tendo mais desempenho e sendo melhor em tarefas mais complexas no sistema operacional. Desvantagem= menos intuitiva, portanto mais dificuldade em ser usada.  
